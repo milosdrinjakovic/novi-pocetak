@@ -1,4 +1,5 @@
 import { Roboto } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 
 const roboto = Roboto({
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
         className={`${roboto.className} bg-customGreen  transition-all duration-1000 text-white  antialiased `}
       >
         {children}
+        <SpeedInsights/>
       </body>
     </html>
   );

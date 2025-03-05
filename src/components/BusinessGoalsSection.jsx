@@ -11,7 +11,7 @@ export default function BusinessGoalsSection() {
         <div className="flex justify-center">
           <AnimatedTitleLine title="Naši ciljevi u poslovanju?" />
         </div>
-        <p className=" text-lg mb-10 w-2/3 mx-auto text-center">
+        <p className=" text-lg mb-10 w-full sm:w-2/3 mx-auto text-left sm:text-center">
           Brza, sigurna i profesionalna usluga. Uvek se trudimo da ostavimo
           dobar utisak, i mislimo da je najbolja reklama dobro odrađen posao.
         </p>

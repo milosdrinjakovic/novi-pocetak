@@ -11,12 +11,13 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import GallerySection from "@/components/GallerySection";
 import HowWeWork from "@/components/HowWeWork";
 import BusinessGoalsSection from "@/components/BusinessGoalsSection";
+import CustomButton from "@/components/ui/Buttons/CustomButton";
 export default function Home() {
   return (
     <>
       <Header />
       <HeroSection />
-
+      
       <section>
         <ScrollToTop />
       </section>
@@ -57,7 +58,6 @@ export default function Home() {
       <MovingTips />
 
       <BusinessGoalsSection />
-      <CustomFooter />
     </>
   );
 }

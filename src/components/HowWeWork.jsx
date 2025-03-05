@@ -10,7 +10,7 @@ export default function HowWeWork() {
           <AnimatedTitleLine title="Kako Pakujemo Vaše Stvari?" />
         </div>
 
-        <div className="max-w-5xl mx-auto px-4 text-center">
+        <div className="max-w-5xl mx-auto px-4 text-left sm:text-center">
           <p className=" text-lg mb-8">
             Naš proces pakovanja je osmišljen da obezbedi maksimalnu sigurnost i
             zaštitu vaših stvari tokom selidbe.

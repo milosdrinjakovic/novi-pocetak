@@ -6,6 +6,8 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { PiUsersFourLight } from "react-icons/pi";
 
 import { GiTakeMyMoney } from "react-icons/gi";
+import CustomButton from './ui/Buttons/CustomButton';
+import { Icon } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -13,21 +15,21 @@ export default function HeroSection() {
         <img
           src="/selidbehero.jpg"
           alt="Hero Image"
-          className="w-full h-[900px] object-cover  object-center"
+          className="w-full h-[1200px] sm:h-[1000px] object-cover  object-center"
         />
 
         <div className="absolute inset-0 flex  justify-start bg-black bg-opacity-10 drop-shadow-lg">
           <div className="flex flex-col items-start justify-start w-full">
             <div className="p-10 space-y-7">
               <div>
-                <p className="text-4xl font-bold drop-shadow-lg self-start">
+                <p className="sm:text-5xl text-4xl font-bold drop-shadow-lg self-start">
                   TRANSPORT I SELIDBE ŠIROM SRBIJE
                 </p>
                 <p className="text-4xl font-bold drop-shadow-lg self-start">
                   
                   NOVI POČETAK
                 </p>
-                <p>Brze Selidbe i Transporti Bez Skrivenih Troškova</p>
+                <p className='w-2/3 sm:w-full'>Brze Selidbe i Transporti Bez Skrivenih Troškova</p>
               </div>
               <div className="text-2xl space-y-4">
                 <div className="flex space-x-2">
@@ -53,7 +55,7 @@ export default function HeroSection() {
                 </div>
 
                 <div className="flex flex-col  text-5xl space-y-3">
-                  <div className="flex items-start">
+                  <div className="flex items-start sm:text-5xl text-4xl">
                     <FaStar className="text-yellow-500" />
                     <FaStar className="text-yellow-500" />
                     <FaStar className="text-yellow-500" />
@@ -66,14 +68,14 @@ export default function HeroSection() {
                 </div>
                 <div className="text-7xl items-center space-x-2 flex">
                   <div>
-                    <GrForwardTen className="text-red-500" />
+                    <GrForwardTen className="text-red-500 sm:text-5xl text-4xl" />
                   </div>
                   <div>
                     <p className="text-2xl">Godina Relevantnog Iskustva</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <div className="text-purple-400 text-5xl flex items-center">
+                  <div className="text-purple-400 sm:text-5xl text-4xl flex items-center">
                     <FaClock />
                     24/7
                   </div>
@@ -85,17 +87,10 @@ export default function HeroSection() {
                   <FaTiktok className="hover:text-[#69C9D0] transition-colors duration-300" />
                 </div>
               </div>
-              <div className="flex flex-row space-x-4 ">
-                <div className="flex-row rounded-full font-bold bg-[#1CAF8A] p-4 px-7 flex items-center space-x-2 hover:bg-white text-white hover:text-[#1CAF8A] transition-all duration-500 ease-in-out hover:cursor-pointer">
-                  <FaArrowRight />
+              <div className="flex  space-y-4 flex-col items-start sm:flex-row sm:space-y-0 sm:space-x-4">
+              <CustomButton text={"Kako pakujemo ?"} Icon={FaArrowRight}/>
 
-                  <p>Kako pakujemo stvari?</p>
-                </div>
-                <div className="flex-row rounded-full font-bold bg-[#1CAF8A] p-4 px-10 flex items-center space-x-2 hover:bg-white text-white hover:text-[#1CAF8A] transition-all duration-500 ease-in-out hover:cursor-pointer">
-                  <FaArrowRight />
-
-                  <p>Zašto izabrati baš nas?</p>
-                </div>
+              <CustomButton text={"Zašto Izabrati nas?"} Icon={FaArrowRight}/>
               </div>
             </div>
           </div>

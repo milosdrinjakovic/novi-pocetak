@@ -29,14 +29,16 @@ const AnimatedTitleLine = ({ title }) => {
   }, []);
 
   return (
-    <div className="my-10">
-      <p className="text-4xl font-semibold drop-shadow-2xl ">{title}</p>
+    <div className="my-4 flex-col items-center justify-center">
+      <div>
+      <p className="text-4xl font-semibold drop-shadow-2xl text-center ">{title}</p>
+      </div>
       <motion.div
-        ref={lineRef} // Koristi ref umesto id
-        className="flex  w-2/6 h-1 bg-white mt-1 origin-left"
-        initial={{ scaleX: 0 }} // Početna širina linije (0%)
-        animate={{ scaleX: isVisible ? 1 : 0 }}  // Animacija kad linija postane vidljiva
-        transition={{ duration: 0.5 }} // Trajanje animacije
+        ref={lineRef} 
+        className="flex mx-auto sm:mx-0  w-2/6 h-1 bg-white mt-1 origin-left"
+        initial={{ scaleX: 0 }} 
+        animate={{ scaleX: isVisible ? 1 : 0 }}  
+        transition={{ duration: 0.5 }} 
       />
     </div>
   );

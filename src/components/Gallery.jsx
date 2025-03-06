@@ -1,10 +1,20 @@
 import React from "react";
+import AnimatedTitleLine from "./ui/AnimatedTitleLine";
+import { FaCameraRetro } from "react-icons/fa";
 
 export default function Gallery() {
   return (
     <>
      <section className="overflow-hidden space-y-2 h-full">
+      <div className="flex items-center justify-center space-x-4">
+    <AnimatedTitleLine title={"Kroz naš objektiv"}/>
+    <div>
+      <div>
+    <FaCameraRetro className="text-4xl"/>
 
+      </div>
+    </div>
+    </div>
 
 
 <div className="max-w-screen-xl 2xl:max-w-screen-3xl px-16 md:px-12 mx-auto pb-16 pt-20 lg:pt-44 h-auto flex flex-col justify-center">

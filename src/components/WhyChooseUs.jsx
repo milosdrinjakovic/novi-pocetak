@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
       posvećenost i iskustvo mogu učiniti razliku.
     </p>
   </div>
-  <div className="mt-12 flex flex-wrap justify-center gap-6 sm:gap-4 w-full md:w-full">
+  <div className="mt-12 flex flex-wrap justify-center gap-6 sm:gap-4 w-full md:w-full ">
     <motion.div
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}

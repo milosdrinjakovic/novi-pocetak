@@ -35,7 +35,7 @@ const AnimatedTitleLine = ({ title }) => {
       </div>
       <motion.div
         ref={lineRef} 
-        className="flex mx-auto sm:mx-0  w-2/6 h-1 bg-white mt-1 origin-left"
+        className="flex mx-auto  w-2/6 h-1 bg-white mt-1 origin-left"
         initial={{ scaleX: 0 }} 
         animate={{ scaleX: isVisible ? 1 : 0 }}  
         transition={{ duration: 0.5 }} 

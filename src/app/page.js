@@ -10,8 +10,6 @@ import {
 import MovingTips from "@/components/MovingTips";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import HeroSection from "@/components/HeroSection";
-import Header from "@/components/Header";
-import CustomFooter from "@/components/CustomFooter";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import GallerySection from "@/components/GallerySection";
 import HowWeWork from "@/components/HowWeWork";
@@ -21,7 +19,6 @@ import Gallery from "@/components/Gallery";
 export default function Home() {
   return (
     <>
-      <Header />
       <HeroSection />
 
       <section>

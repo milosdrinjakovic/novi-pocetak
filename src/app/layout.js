@@ -1,6 +1,10 @@
 import { Roboto } from "next/font/google";
+import Header from "@/components/Header";
+
 import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import "./globals.css";
+import CustomFooter from "@/components/CustomFooter";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -24,8 +28,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${roboto.className} bg-customGreen  transition-all duration-1000 text-white  antialiased `}
       >
+        <Header/>
+
         {children}
         <SpeedInsights/>
+        <CustomFooter/>
       </body>
     </html>
   );

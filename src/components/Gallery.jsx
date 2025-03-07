@@ -6,13 +6,14 @@ export default function Gallery() {
   return (
     <>
      <section className="overflow-hidden space-y-2 h-full">
-      <div className="flex items-center justify-center space-x-4">
-    <AnimatedTitleLine title={"Kroz naš objektiv"}/>
+      
+      <div className="flex flex-col items-center justify-center space-y-0">
+        <div className="text">
+          <FaCameraRetro className="text-4xl" alt="" />
+        </div>
+    <AnimatedTitleLine title={"Kroz naš objektiv !"}/>
     <div>
-      <div>
-    <FaCameraRetro className="text-4xl"/>
-
-      </div>
+     
     </div>
     </div>
 

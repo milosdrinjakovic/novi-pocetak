@@ -7,7 +7,7 @@ const MovingTips = () => {
     <section className="my-20 w-full sm:w-3/4 mx-auto">
 
   <div className="flex justify-center">
-    <AnimatedTitleLine title={"Saveti za uspešnu selidbu"} />
+    <AnimatedTitleLine title={"Saveti za uspešnu selidbu ?"} />
   </div>
   <div className="flex flex-wrap justify-center ">
     {/* Savet 1 */}

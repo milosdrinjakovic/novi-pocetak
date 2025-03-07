@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 
 import { motion } from 'framer-motion';
 
-const AnimatedTitleLine = ({ title }) => {
+const AnimatedTitleLine = ({ title}) => {
   const [isVisible, setIsVisible] = useState(false);
   const lineRef = useRef(null); // Ref za svaki pojedinačni element
 
@@ -28,14 +28,16 @@ const AnimatedTitleLine = ({ title }) => {
     };
   }, []);
 
+  
+
   return (
     <div className="my-4 flex-col items-center justify-center">
       <div>
-      <p className="text-4xl font-semibold drop-shadow-2xl text-center ">{title}</p>
+      <p className={`text-4xl font-semibold drop-shadow-2xl text-center sm:text-left`}>{title}</p>
       </div>
       <motion.div
         ref={lineRef} 
-        className="flex mx-auto  w-2/6 h-1 bg-white mt-1 origin-left"
+        className="flex mx-auto sm:mx-0 sm:justify-start  w-2/4 h-1 bg-white mt-1 origin-left"
         initial={{ scaleX: 0 }} 
         animate={{ scaleX: isVisible ? 1 : 0 }}  
         transition={{ duration: 0.5 }} 

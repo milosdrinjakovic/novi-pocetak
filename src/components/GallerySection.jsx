@@ -10,33 +10,32 @@ import CustomButton from "./ui/Buttons/CustomButton";
 export default function GallerySection() {
   return (
     <>
-   <section className="bg-customBlue py-36">
+   <section className="bg-customBlue py-36 px-2 sm:px-0">
   <div className="flex flex-col md:flex-row justify-center items-center w-full max-w-3xl md:max-w-5xl mx-auto space-y-8 md:space-y-0 md:space-x-8">
     
     {/* Tekstualni deo */}
-    <div className="w-full md:w-1/2 text-center md:text-left">
+    <div className="w-full md:w-1/2 text-left">
       <AnimatedTitleLine title="Najpovoljnije selidbe i transporti u gradu?" />
       <p className="mb-4 text-lg">
         Tražite selidbu koja se uklapa u vaš budžet? Naša ponuda omogućava vam da pređete dug put bez da preterano opteretite svoje finansije.
       </p>
 
-      <div className="flex flex-col space-y-4 ">
-        <div className="flex items-center space-x-4 ">
-          <SiHomeassistantcommunitystore className="text-5xl text-white" />
-          <p className="text-sm">
-          Za kućne selidbe nudimo brzu i sigurnu uslugu, prilagođenu vašim potrebama. Bilo da se selite u nov dom ili želite da premestite nameštaj, naša ekipa će se pobrinuti da sve ide glatko.
-          </p>
-        </div>
+      <div className="flex items-start space-x-4">
+  <SiHomeassistantcommunitystore className="w-14 h-14 flex-shrink-0 text-white" />
+  <p className="text-base leading-relaxed max-w-sm">
+    Za kućne selidbe nudimo brzu i sigurnu uslugu, prilagođenu vašim potrebama. Bilo da se selite u nov dom ili želite da premestite nameštaj, naša ekipa će se pobrinuti da sve ide glatko.
+  </p>
+</div>
 
-        <div className="flex items-center space-x-4">
-          <LiaIndustrySolid className="text-6xl text-white" />
-          <p className="text-sm">
-          Naša usluga komercijalne selidbe kao ili transporta je efikasna i brza, kako bi vaša firma što pre nastavila sa radom. Sprovodimo komercijalne selidbe po povoljnim cenama. Bilo da se selite u novo poslovno sedište, ili premeštate opremu, naš tim garantuje brzu i pouzdanu uslugu koja ne ometa poslovne procese.
-          </p>
-        </div>
-      </div>
+<div className="flex items-start space-x-4">
+  <LiaIndustrySolid className="w-14 h-20 flex-shrink-0 text-white" />
+  <p className="text-base leading-relaxed max-w-sm">
+    Naša usluga komercijalne selidbe kao ili transporta je efikasna i brza, kako bi vaša firma što pre nastavila sa radom. Sprovodimo komercijalne selidbe po povoljnim cenama. 
+  </p>
+</div>
 
-      <div className="mt-8">
+
+      <div className="mt-8 flex justify-center sm:justify-start">
         <CustomButton text={"064-222-444"} Icon={FaPhoneAlt} />
       </div>
     </div>

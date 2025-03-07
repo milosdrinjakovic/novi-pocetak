@@ -1,0 +1,24 @@
+{
+    "selidbe-lokalne": {
+      "title": "Lokalne Selidbe - Sigurnost i Brzina na Prvom Mestu",
+      "description": "Naša usluga omogućava vam brzu, sigurnu i povoljnu selidbu unutar grada. Bez obzira na to da li se selite u novi dom ili premeštate nameštaj, naš tim je tu da se pobrine za vaš komfor.",
+      "additionalDescription": "Sa dugogodišnjim iskustvom, garantujemo da će vaša selidba ili transport biti završeni u najkraćem mogućem roku.",
+      "imageUrl1": "/gallery14.jpg",
+      "imageUrl2": "/gallery8.jpg"
+    },
+    "selidbe-medjunarodne": {
+      "title": "Međunarodne Selidbe - Pouzdanost i Poverenje na Globalnom Nivou",
+      "description": "Sa našom međunarodnom selidbom, vaša imovina će sigurno stići na bilo koju tačku sveta.",
+      "additionalDescription": "Naša međunarodna selidba uključuje sve potrebne korake za uspešan prelaz preko granica.",
+      "imageUrl1": "/gallery15.jpg",
+      "imageUrl2": "/gallery10.jpg"
+    },
+    "transport": {
+      "title": "Transport Firmi",
+      "description": "Profesionalni transport za poslovne potrebe firme i veće kompanije.",
+      "additionalDescription": "Specijalizovani transport usluge za firme svih veličina, uz dostupnost više vrsta vozila.",
+      "imageUrl1": "/gallery12.jpg",
+      "imageUrl2": "/gallery10.jpg"
+    }
+}
+  

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-[#202A3F] text-white flex justify-between items-center px-10 z-50">
+    <header className="bg-[#202A3F] text-white flex justify-between items-center px-10 z-50 ">
         <nav className="hidden md:flex items-center space-x-6 z-40 p-0 m-0">
         <Link href="/#" className="hover:text-gray-300">
           Početna
@@ -33,11 +33,9 @@ export default function Header() {
       </nav>
       <div className="flex items-center space-x-3">
         <div>
-          <Image src="/selidbelogo.png" alt="Logo" width={120} height={120} />
+          <Image src="/selidbelogo.png" alt="Logo" width={230} height={230}/>
         </div>
-        <div>
-          <h1 className="text-xl font-bold">Selidbe Novi Početak</h1>
-        </div>
+       
       </div>
 
       {/* Navigation */}
@@ -74,7 +72,7 @@ export default function Header() {
       </nav>
 
       {/* Hamburger menu on smaller screens */}
-      <button className="md:hidden text-2xl">☰</button>
+    
 
       {/* Phone button */}
     </header>

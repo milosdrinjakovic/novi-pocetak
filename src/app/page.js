@@ -47,6 +47,7 @@ export default function Home() {
         backgroundPosition: "left",
         backgroundRepeat: "no-repeat",
       }}
+      id="customBgSize"
     ></div>
   </div>
 

@@ -70,14 +70,15 @@ const MovingTips = () => {
       whileHover={{ scale: 1.05 }}
       className="flex flex-col items-center w-full sm:w-1/4"
     >
-      <div className="w-full h-48 relative">
-        <Image
-          src="/kombi.png"
-          alt="Pakovanje"
-          fill
-          objectFit="contain"
-        />
-      </div>
+     <div className="w-full h-48 relative">
+  <Image
+    src="/kombi.png"
+    alt="Pakovanje"
+    fill
+    objectFit="contain"
+    className="transform scale-150"  // Povećava sliku za 10%
+  />
+</div>
       <h3 className="text-xl font-semibold mt-4 mb-2 text-center">
         Unajmi odgovarajući prevoz
       </h3>

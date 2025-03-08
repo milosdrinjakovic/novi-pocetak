@@ -3,7 +3,7 @@ import Image from "next/image";
 import AnimatedTitleLine from "./ui/AnimatedTitleLine";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
 import { LiaIndustrySolid } from "react-icons/lia";
-import { FaCameraRetro, FaPhoneAlt } from "react-icons/fa";
+import { FaCameraRetro, FaIndustry, FaPhoneAlt, FaTruck } from "react-icons/fa";
 import CustomButton from "./ui/Buttons/CustomButton";
 
 
@@ -28,7 +28,7 @@ export default function GallerySection() {
 </div>
 
 <div className="flex items-start space-x-4">
-  <LiaIndustrySolid className="w-14 h-20 flex-shrink-0 text-white" />
+  <FaTruck className="w-14 h-20 flex-shrink-0 text-white" />
   <p className="text-base leading-relaxed max-w-sm">
     Naša usluga komercijalne selidbe kao ili transporta je efikasna i brza, kako bi vaša firma što pre nastavila sa radom. Sprovodimo komercijalne selidbe po povoljnim cenama. 
   </p>

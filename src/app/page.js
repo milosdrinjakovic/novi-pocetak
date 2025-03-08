@@ -36,46 +36,42 @@ export default function Home() {
       </section>
       <GallerySection />
 
-      <section className="flex flex-col md:flex-row items-center  w-full justify-center py-10 bg-customBlue">
-        <div className="w-full md:w-3/4 h-[400px] overflow-hidden relative">
-          <div
-            className="bg-cover  w-full h-full"
-            style={{
-              backgroundImage: "url('/paralax1.webp')",
-              backgroundAttachment: "fixed",
-              backgroundSize: "60%", // Manja slika
-              backgroundPosition: "left", // Centriranje slike
-              backgroundRepeat: "no-repeat",
-            }}
-          ></div>
-        </div>
+      <section className="grid grid-cols-1 md:grid-cols-2 items-center w-full justify-center py-10 bg-customBlue">
+  <div className="h-[400px] overflow-hidden relative">
+    <div
+      className="bg-cover w-full h-full"
+      style={{
+        backgroundImage: "url('/gallery3.jpg')",
+        backgroundAttachment: "fixed",
+        backgroundSize: "60%",
+        backgroundPosition: "left",
+        backgroundRepeat: "no-repeat",
+      }}
+    ></div>
+  </div>
 
-        <div className="w-3/4 md:w-full p-8 text-white flex flex-col items-center">
-          <h2 className="text-4xl font-bold mb-6">Naše Usluge</h2>
-          <ul className="space-y-4 text-lg flex flex-col">
-            <li className="flex items-center gap-2 text-2xl">
-              <FaCheckSquare className="text-customGreen" /> Selidbe stanova,
-              kuća ili vikendica
-            </li>
-            <li className="flex items-center gap-2 text-2xl">
-              <FaCheckSquare className="text-customGreen" /> Komercijalne
-              selidbe i transport
-            </li>
-            <li className="flex items-center gap-2 text-2xl">
-              <FaCheckSquare className="text-customGreen" /> Montaža i demontaža
-              nameštaja
-            </li>
-            <li className="flex items-center gap-2 text-2xl">
-              <FaCheckSquare className="text-customGreen" /> Pakovanje i zaštita
-              stvari
-            </li>
-            <li className="flex items-center gap-2 text-2xl">
-              <FaCheckSquare className="text-customGreen" /> Transport na
-              teritoriji cele Srbije
-            </li>
-          </ul>
-        </div>
-      </section>
+  <div className="p-8 text-white flex flex-col justify-center items-start md:items-center">
+    <h2 className="text-4xl font-bold mb-6 text-center md:text-left">Naše Usluge</h2>
+    <ul className="space-y-4 text-lg">
+      <li className="flex items-center gap-2 text-2xl">
+        <FaCheckSquare className="text-customGreen" /> Selidbe stanova, kuća ili vikendica
+      </li>
+      <li className="flex items-center gap-2 text-2xl">
+        <FaCheckSquare className="text-customGreen" /> Komercijalne selidbe i transport
+      </li>
+      <li className="flex items-center gap-2 text-2xl">
+        <FaCheckSquare className="text-customGreen" /> Montaža i demontaža nameštaja
+      </li>
+      <li className="flex items-center gap-2 text-2xl">
+        <FaCheckSquare className="text-customGreen" /> Pakovanje i zaštita stvari
+      </li>
+      <li className="flex items-center gap-2 text-2xl">
+        <FaCheckSquare className="text-customGreen" /> Transport na teritoriji cele Srbije
+      </li>
+    </ul>
+  </div>
+</section>
+
       <section className="bg-customBlue flex">
       <div className="container mx-auto px-4">
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

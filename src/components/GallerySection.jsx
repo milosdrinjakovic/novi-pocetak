@@ -44,7 +44,7 @@ export default function GallerySection() {
     <div className="w-full md:w-1/2 flex flex-col space-y-4 items-center">
       <div className="h-64 w-2/3">
         <Image
-          src="/gallery2.jpg"
+          src="/gallery6.jpg"
           alt="gallery2"
           width={2000}
           height={1000}
@@ -53,7 +53,7 @@ export default function GallerySection() {
       </div>
       <div className="h-64 w-2/3">
         <Image
-          src="/gallery3.jpg"
+          src="/gallery8.jpg"
           alt="gallery3"
           width={500}
           height={100}

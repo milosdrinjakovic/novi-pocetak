@@ -98,7 +98,14 @@ export default function HeroSection() {
             </div>
             <div className="flex  space-y-4 flex-col items-start sm:flex-row sm:space-y-0 sm:space-x-4">
               <a
-                href="#pakovanje" // Ovde ide ID na koji linkuješ
+                href="#pakovanje"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector("#pakovanje").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
                 className="rounded-full font-bold bg-[#1CAF8A] p-4 sm:p-6 md:p-3 flex items-center space-x-2 justify-center hover:bg-white text-white hover:text-[#1CAF8A] transition-all duration-500 ease-in-out min-w-[170px] sm:min-w-[190px] md:min-w-[220px] max-w-[250px] hover:cursor-pointer"
               >
                 <FaArrowRight className="sm:w-6 sm:h-6" />
@@ -108,7 +115,14 @@ export default function HeroSection() {
               </a>
 
               <a
-                href="#povoljnije" // Ovde ide drugi ID na koji linkuješ
+                href="#povoljnije"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector("#povoljnije").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }}
                 className="rounded-full font-bold bg-[#1CAF8A] p-4 sm:p-6 md:p-3 flex items-center space-x-2 justify-center hover:bg-white text-white hover:text-[#1CAF8A] transition-all duration-500 ease-in-out min-w-[170px] sm:min-w-[190px] md:min-w-[220px] max-w-[250px] hover:cursor-pointer"
               >
                 <FaArrowRight className="sm:w-6 sm:h-6" />

@@ -6,7 +6,7 @@ import AnimatedTitleLine from './ui/AnimatedTitleLine'
 export default function HowWeWork() {
   return (
     <section className="py-10 ">
-        <div className="flex justify-center">
+        <div className="flex justify-center " id='pakovanje'>
           <AnimatedTitleLine title="Kako Pakujemo Vaše Stvari?" />
         </div>
 
@@ -16,7 +16,7 @@ export default function HowWeWork() {
             zaštitu vaših stvari tokom selidbe.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6" >
             {/* Korak 1: Priprema */}
             <motion.div
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-transform hover:scale-105"

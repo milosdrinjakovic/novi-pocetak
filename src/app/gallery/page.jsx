@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -89,57 +89,65 @@ export default function Gallery() {
       </div>
 
       <AnimatePresence>
-        {selectedImage && (
-          <motion.div
-            className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <button
-              onClick={closeImage}
-              className="absolute top-5 right-5 text-white text-3xl"
-            >
-              <FaTimes />
-            </button>
+  {selectedImage && (
+    <motion.div
+      className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex justify-center items-center z-50"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+      onAnimationComplete={() => {
+        if (!selectedImage) {
+          setSelectedImage(null); // Dodatna provera da se osigura izlazak
+        }
+      }}
+    >
+      <button
+        onClick={closeImage}
+        className="absolute top-5 right-5 text-white text-3xl"
+      >
+        <FaTimes />
+      </button>
 
-            <motion.div
-              key={index}
-              custom={direction}
-              variants={variants}
-              initial="enter"
-              animate="center"
-              exit="exit"
-              transition={{ type: "tween", duration: 0.5 }}
-              drag="x"
-              dragConstraints={{ left: 0, right: 0 }}
-              onDragEnd={handleDragEnd}
-              className="relative w-3/4 md:w-1/2 h-auto"
-            >
-              <Image
-                src={images[index]}
-                alt="enlarged"
-                width={1000}
-                height={1000}
-                className="w-full h-auto rounded-lg"
-              />
-            </motion.div>
+      <motion.div
+        key={index}
+        custom={direction}
+        variants={variants}
+        initial="enter"
+        animate="center"
+        exit="exit"
+        transition={{ type: "tween", duration: 0.5 }}
+        drag="x"
+        dragConstraints={{ left: 0, right: 0 }}
+        onDragEnd={handleDragEnd}
+          className="relative max-w-[90vw] max-h-[80vh] w-auto h-auto flex items-center justify-center"
+      >
+        <Image
+          src={images[index]}
+          alt="enlarged"
+          width={1000}
+          height={1000}
+          className="w-full  max-h-[80vh] rounded-lg"
+        />
+      </motion.div>
 
-            <button
-              onClick={prevImage}
-              className="absolute left-5 text-white text-3xl"
-            >
-              <FaArrowLeft />
-            </button>
-            <button
-              onClick={nextImage}
-              className="absolute right-5 text-white text-3xl"
-            >
-              <FaArrowRight />
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <button
+        onClick={prevImage}
+        className=" absolute left-5   text-white text-3xl"
+      >
+        <FaArrowLeft />
+      </button>
+
+      <button
+        onClick={nextImage}
+        className=" absolute right-5  text-white text-3xl"
+      >
+        <FaArrowRight />
+      </button>
+    </motion.div>
+  )}
+</AnimatePresence>
+
     </div>
   );
 }

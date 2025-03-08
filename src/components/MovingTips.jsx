@@ -76,7 +76,6 @@ const MovingTips = () => {
     alt="Pakovanje"
     fill
     objectFit="contain"
-    className="transform scale-150"  // Povećava sliku za 10%
   />
 </div>
       <h3 className="text-xl font-semibold mt-4 mb-2 text-center">

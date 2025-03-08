@@ -14,7 +14,7 @@ export default function GallerySection() {
   <div className="flex flex-col md:flex-row justify-center items-center w-full max-w-3xl md:max-w-5xl mx-auto space-y-8 md:space-y-0 md:space-x-8">
     
     {/* Tekstualni deo */}
-    <div className="w-full md:w-1/2 text-left">
+    <div className="w-full md:w-1/2 text-left scroll-smooth" id="povoljnije" >
       <AnimatedTitleLine title="Najpovoljnije selidbe i transporti u gradu?" />
       <p className="mb-4 text-lg">
         Tražite selidbu koja se uklapa u vaš budžet? Naša ponuda omogućava vam da pređete dug put bez da preterano opteretite svoje finansije.
@@ -36,7 +36,7 @@ export default function GallerySection() {
 
 
       <div className="mt-8 flex justify-center sm:justify-start">
-        <CustomButton text={"064-222-444"} Icon={FaPhoneAlt} />
+        <CustomButton text={"+381 64 444 222"} Icon={FaPhoneAlt} phoneNumber={"+381 64 444 222"}/>
       </div>
     </div>
 

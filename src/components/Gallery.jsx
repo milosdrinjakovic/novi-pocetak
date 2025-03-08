@@ -9,7 +9,7 @@ export default function Gallery() {
       
       <div className="flex flex-col items-center justify-center space-y-0">
         <div className="text">
-          <FaCameraRetro className="text-4xl" alt="" />
+          <FaCameraRetro className="text-6xl" alt="" />
         </div>
     <AnimatedTitleLine title={"Kroz naš objektiv !"}/>
     <div>

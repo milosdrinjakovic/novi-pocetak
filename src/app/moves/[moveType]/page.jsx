@@ -34,7 +34,7 @@ export default function MovePage() {
   }
 
   return (
-    <section className="bg-customBlue py-36 sm:py-20 px-2 sm:px-0">
+    <section className="bg-customBlue py-5 sm:py-20 px-2 sm:px-0">
       <div className="flex flex-col md:flex-row justify-center items-center w-full max-w-3xl md:max-w-5xl mx-auto space-y-8 md:space-y-0 md:space-x-8">
         
         <div

@@ -76,68 +76,73 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section className="bg-customBlue py-8 px-2">
-        <div className="flex flex-col md:flex-row justify-center gap-20">
-          {/* Prva kolona */}
-          <div className="flex flex-col items-center space-y-4">
-            <div className="flex items-center space-x-2">
-              <div>
-                <Image src={"/percentage.svg"} width={62} height={62} alt="" />
-              </div>
-              <p className="text-3xl">Vršimo besplatnu procenu</p>
-            </div>
-            <div className="flex justify-center w-full">
-              <p className="max-w-md text-left">
-                - Sve što je potrebno je da nas pozovete! Naša usluga je brza,
-                jednostavna i potpuno bez obaveza. Obezbeđujemo profesionalan
-                pristup i brzu procenu, bez skrivenih troškova. Kontaktirajte
-                nas danas i uverite se sami kako vam možemo pomoći u svakom
-                koraku!
-              </p>
-            </div>
-          </div>
-
-          {/* Druga kolona */}
-          <div className="flex flex-col items-center space-y-4">
-            <div className="flex items-center space-x-2">
-              <div>
-                <Image src={"/box.svg"} width={62} height={62} alt="" />
-              </div>
-              <p className="text-3xl">Skladištimo vaše stvari</p>
-            </div>
-            <div className="flex justify-center w-full">
-              <p className="max-w-md text-left">
-                - Pružamo sigurno i zaštićeno skladištenje za sve vaše predmete,
-                bilo da su to nameštaj, lične stvari ili poslovna oprema. Naš
-                prostor je idealan za kratkoročno i dugoročno skladištenje, sa
-                pristupom koji je jednostavan i bezbedan.
-              </p>
-            </div>
-          </div>
-
-          {/* Treća kolona */}
-          <div className="flex flex-col items-center space-y-4">
-            <div className="flex items-center space-x-2">
-              <div>
-                <Image
-                  src={"/muscle.svg"}
-                  width={62}
-                  height={62}
-                  alt="Prevoz teških stvari"
-                />
-              </div>
-              <p className="text-3xl">Prevoz teških stvari</p>
-            </div>
-            <div className="flex justify-center w-full">
-              <p className="max-w-md text-left">
-                - Brzo i sigurno prevozimo teške i glomazne predmete. Bilo da su
-                u pitanju TEA peći, klaviri, nameštaj ili druge velike stvari,
-                garantujemo siguran transport do vašeg odredišta, bez obzira na
-                veličinu ili težinu predmeta.
-              </p>
-            </div>
-          </div>
+      <section className="bg-customBlue flex">
+      <div className="container mx-auto px-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    {/* Prva kolona */}
+    <div className="flex flex-col items-start space-y-4">
+      <div className="flex items-center justify-start space-x-2">
+        <div>
+          <Image src={"/percentage.svg"} width={62} height={62} alt="" />
         </div>
+        <p className="text-3xl">Vršimo besplatnu procenu</p>
+      </div>
+      <div className="flex justify-start w-full">
+        <p className="max-w-md text-left">
+          - Sve što je potrebno je da nas pozovete! Naša usluga je brza,
+          jednostavna i potpuno bez obaveza. Obezbeđujemo profesionalan
+          pristup i brzu procenu, bez skrivenih troškova. Kontaktirajte
+          nas danas i uverite se sami kako vam možemo pomoći u svakom
+          koraku!
+        </p>
+      </div>
+    </div>
+
+    {/* Druga kolona */}
+    <div className="flex flex-col items-start space-y-4">
+      <div className="flex items-center justify-start space-x-2">
+        <div>
+          <Image src={"/box.svg"} width={62} height={62} alt="" />
+        </div>
+        <p className="text-3xl">Skladištimo vaše stvari</p>
+      </div>
+      <div className="flex justify-start w-full">
+        <p className="max-w-md text-left">
+          - Pružamo sigurno i zaštićeno skladištenje za sve vaše predmete,
+          bilo da su to nameštaj, lične stvari ili poslovna oprema. Naš
+          prostor je idealan za kratkoročno i dugoročno skladištenje, sa
+          pristupom koji je jednostavan i bezbedan.
+        </p>
+      </div>
+    </div>
+
+    {/* Treća kolona */}
+    <div className="flex flex-col items-start space-y-4">
+      <div className="flex items-center justify-start space-x-2">
+        <div>
+          <Image
+            src={"/muscle.svg"}
+            width={62}
+            height={62}
+            alt="Prevoz teških stvari"
+          />
+        </div>
+        <p className="text-3xl">Prevoz teških stvari</p>
+      </div>
+      <div className="flex justify-start w-full">
+        <p className="max-w-md text-left">
+          - Brzo i sigurno prevozimo teške i glomazne predmete. Bilo da su
+          u pitanju TEA peći, klaviri, nameštaj ili druge velike stvari,
+          garantujemo siguran transport do vašeg odredišta, bez obzira na
+          veličinu ili težinu predmeta.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
       </section>
 
       <section>
